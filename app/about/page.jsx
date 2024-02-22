@@ -3,11 +3,11 @@ import React from "react";
 
 const About = () => {
   return (
-    <section className="h-screen flex items-center px-10 md:px-14 lg:px-20 xl:px-24 2xl:px-40 gap-5 md:gap-10 lg:gap-14 xl:gap-20 2xl:gap-24">
-      <div className="flex-[0.7]">
+    <section className="h-screen flex items-center pr-10 md:pr-14 lg:pr-20 xl:pr-24 2xl:pr-40 gap-5 md:gap-10 lg:gap-14 xl:gap-20 2xl:gap-24">
+      <div className="flex-[0.8]">
         <Image src="/me.png" alt="me" height={500} width={500} />
       </div>
-      <div className="flex-[1.3]">
+      <div className="flex-[1.2]">
         <h3 className="text-orange-base font-bold text-3xl md:text-4xl lg:text-5xl">
           About me
         </h3>
