@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -34,28 +35,36 @@ export default function Home() {
             <p>1. Google Pay for seniors</p>
             <div className="flex gap-3">
               <div className="dot w-4 h-4 bg-[#698AFF] rounded-full"></div>
-              <Image src="/arrow.png" alt="arrow" width={20} height={20} />
+              <Link href="/gpay">
+                <Image src="/arrow.png" alt="arrow" width={20} height={20} />
+              </Link>
             </div>
           </li>
           <li className="flex justify-between items-center">
             <p>2. YCC: Mobile App for parents</p>
             <div className="flex gap-3">
               <div className="dot w-4 h-4 bg-[#FF46CE] rounded-full"></div>
-              <Image src="/arrow.png" alt="arrow" width={20} height={20} />
+              <Link href="/ycc">
+                <Image src="/arrow.png" alt="arrow" width={20} height={20} />
+              </Link>
             </div>
           </li>
           <li className="flex justify-between items-center">
             <p>3. Tasya: Digital Virtual Reality</p>
             <div className="flex gap-3">
               <div className="dot w-4 h-4 bg-[#698AFF] rounded-full"></div>
-              <Image src="/arrow.png" alt="arrow" width={20} height={20} />
+              <Link href="/tasya">
+                <Image src="/arrow.png" alt="arrow" width={20} height={20} />
+              </Link>
             </div>
           </li>
           <li className="flex justify-between items-center">
             <p>4. Some of my artwork</p>
             <div className="flex gap-3">
               <div className="dot w-4 h-4 bg-gradient-to-tr from-[#698AFF] from-40% via-white to-60% to-[#FF46CE] rounded-full"></div>
-              <Image src="/arrow.png" alt="arrow" width={20} height={20} />
+              <Link href="/artwork">
+                <Image src="/arrow.png" alt="arrow" width={20} height={20} />
+              </Link>
             </div>
           </li>
         </ol>
