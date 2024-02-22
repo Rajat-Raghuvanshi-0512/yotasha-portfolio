@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <section className="my-10">
+    <section className="my-10 mt-20 lg:mt-32 xl:mt-40">
       <p className="text-orange-base text-4xl lg:text-5xl font-semibold text-center !leading-normal">
         <span className="font-bold">Hi there, I’m Yotasha,</span>
         <br />
