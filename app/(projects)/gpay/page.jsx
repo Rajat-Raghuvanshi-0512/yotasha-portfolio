@@ -1,10 +1,37 @@
+import { personas } from "@/utils/constant";
 import Image from "next/image";
 import React from "react";
+const PersonaCard = ({ name, bg, tech, challenge, needs, image }) => {
+  return (
+    <div className="border border-gray-300 rounded-xl px-5 py-10 flex gap-5 drop-shadow-md bg-white/80 hover:scale-95 duration-300">
+      <div className="flex-[0.6]">
+        <Image
+          src={`/projects/personas/${image}`}
+          alt="persona"
+          width={100}
+          height={100}
+          className={"w-full h-full object-contain object-top"}
+        />
+      </div>
+      <div className="flex-[1.4]">
+        <h4 className="text-xl font-semibold">{name}</h4>
+        <ul className="flex flex-col gap-3 mt-5 text-sm">
+          <li>- Background: {bg}</li>
+          <li>- Technology Experience: {tech}</li>
+          <li>- Challenges: {challenge}</li>
+          <li>- Needs: {needs}</li>
+        </ul>
+      </div>
+    </div>
+  );
+};
 
 const Gpay = () => {
   const subHeadingStyles =
     "text-xl lg:text-2xl xl:text-3xl font-semibold text-[#4767D6]";
   const titleStyle = "text-[#4767D6] mt-5";
+  const designCardStyle =
+    "bg-[#ddebf7] rounded-lg text-center h-40 flex items-center justify-center text-2xl capitalize p-5 drop-shadow border-blue-200 border";
   return (
     <section className="m-5 md:m-10 mt-20 md:mt-24 xl:mx-20 2xl:mx-40 lg:mt-32 xl:mt-40 px-10 lg:px-20 2xl:text-xl">
       <div className="flex gap-5">
@@ -152,11 +179,41 @@ const Gpay = () => {
       </div>
       <div className={`mt-10 xl:mt-20`}>
         <h3 className={subHeadingStyles}>USER PERSONAS</h3>
-        <div className="grid grid-cols-2 gap-5 mt-5">
-          <div>hi</div>
-          <div>hi</div>
-          <div>hi</div>
-          <div>hi</div>
+        <div className="grid grid-cols-2 gap-5 xl:gap-10 mt-5">
+          {personas.map((persona) => (
+            <PersonaCard key={persona.name} {...persona} />
+          ))}
+        </div>
+      </div>
+      <div className="mt-10 xl:mt-20">
+        <h3 className={subHeadingStyles}> IDEATHON & DESIGN</h3>
+        <h4 className="my-5">HOW MIGHT WE:</h4>
+        <div className="grid grid-cols-3 gap-5 xl:gap-8">
+          <div className={designCardStyle}>Family member assistance</div>
+          <div className={designCardStyle}>Voice activation</div>
+          <div className={designCardStyle}>Pre-selecting merchants</div>
+          <div className={designCardStyle}>AI assistance</div>
+          <div className={designCardStyle}>Community based support</div>
+          <div className={designCardStyle}>
+            Dummy transactions for practice and confidence building
+          </div>
+        </div>
+        <h4 className="my-5 mt-10">PAPER WIREFRAMING:</h4>
+        <div className="grid grid-cols-2 gap-5 xl:gap-8">
+          <Image
+            src={"/projects/wireframe1.png"}
+            alt="wireframe"
+            width={200}
+            height={200}
+            className="w-full h-[400px] first object-contain bg-gray-200 drop-shadow-lg border-gray-300 border rounded-3xl duration-500"
+          />
+          <Image
+            src={"/projects/wireframe2.png"}
+            alt="wireframe"
+            width={200}
+            height={200}
+            className="w-full h-[400px] object-contain second bg-gray-200 drop-shadow-lg border-gray-300 border rounded-3xl duration-500"
+          />
         </div>
       </div>
     </section>

@@ -27,3 +27,7 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #ff4f1a;
 }
+
+.first + .second:hover .first {
+  display: none !important;
+}
