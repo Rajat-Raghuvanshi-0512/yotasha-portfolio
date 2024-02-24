@@ -18,12 +18,12 @@ const Navbar = () => {
           className="w-10 h-10 object-contain md:w-14 md:h-14"
         />
       </Link>
-      <ul className="gap-5 md:gap-7 lg:gap-10 font-medium text-orange-dark items-center hidden md:flex">
+      <ul className="gap-5 md:gap-7 lg:gap-10 font-medium text-orange-dark items-center hidden md:flex 2xl:text-xl">
         <li>
           <Link
             className={
               pathname === "/"
-                ? "underline drop-shadow-md shadow-orange-dark underline-offset-8"
+                ? "underline drop-shadow-md text-orange-base shadow-orange-dark underline-offset-8"
                 : ""
             }
             href="/"
@@ -35,7 +35,7 @@ const Navbar = () => {
           <Link
             className={
               pathname === "/about"
-                ? "underline drop-shadow-md shadow-orange-dark underline-offset-8"
+                ? "underline drop-shadow-md shadow-orange-dark text-orange-base underline-offset-8"
                 : ""
             }
             href="/about"
@@ -47,7 +47,7 @@ const Navbar = () => {
           <Link
             className={
               pathname === "/resume"
-                ? "underline drop-shadow-md shadow-orange-dark underline-offset-8"
+                ? "underline drop-shadow-md shadow-orange-dark text-orange-base underline-offset-8"
                 : ""
             }
             href="/resume"
@@ -59,7 +59,7 @@ const Navbar = () => {
           <Link
             className={
               pathname === "/contact"
-                ? "underline drop-shadow-md shadow-orange-dark underline-offset-8"
+                ? "underline drop-shadow-md shadow-orange-dark text-orange-base underline-offset-8"
                 : ""
             }
             href="/contact"
