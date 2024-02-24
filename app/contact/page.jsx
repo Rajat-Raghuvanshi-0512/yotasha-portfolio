@@ -72,7 +72,14 @@ const page = () => {
                 alt="panda"
                 width={400}
                 height={400}
-                className="w-[150px] -bottom-7 right-14 z-10 absolute h-[150px] md:w-[300px] md:h-[300px] object-contain object-right"
+                className="w-[150px] -bottom-7 peer right-14 z-10 absolute h-[150px] md:w-[300px] md:h-[300px] object-contain object-right"
+              />
+              <Image
+                src="/hi.png"
+                alt="hi"
+                width={80}
+                height={80}
+                className="top-[50%] 2xl:top-[60%] opacity-0 peer-hover:opacity-100 absolute duration-300 right-14 z-10 object-contain object-right"
               />
             </div>
           </div>
