@@ -36,12 +36,12 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <ol className="p-5 md:m-14 flex w-full md:w-auto flex-col gap-3 lg:gap-7 list-decimal text-orange-dark md:text-2xl font-medium">
-          <li className="flex justify-between items-center">
-            <p>1. Google Pay for seniors</p>
-            <div className="flex gap-3">
-              <div className="dot w-4 h-4 bg-[#698AFF] rounded-full"></div>
-              <Link href="/gpay">
+        <ol className="p-5 md:m-14 flex w-full md:w-auto flex-col gap-3 lg:gap-7 list-decimal text-orange-dark md:text-2xl font-medium lg:text-3xl xl:text-4xl xl:gap-10">
+          <li>
+            <Link href="/gpay" className="flex justify-between items-center">
+              <p>Google Pay for seniors</p>
+              <div className="flex gap-3">
+                <div className="dot w-4 h-4 bg-[#698AFF] rounded-full"></div>
                 <Image
                   src="/arrow.png"
                   alt="arrow"
@@ -49,14 +49,14 @@ export default function Home() {
                   height={20}
                   className="w-3 h-3 md:w-5 md:h-5 object-contain"
                 />
-              </Link>
-            </div>
+              </div>
+            </Link>
           </li>
-          <li className="flex justify-between items-center">
-            <p>2. YCC: Mobile App for parents</p>
-            <div className="flex gap-3">
-              <div className="dot w-4 h-4 bg-[#FF46CE] rounded-full"></div>
-              <Link href="/ycc">
+          <li>
+            <Link href="/ycc" className="flex justify-between items-center">
+              <p>YCC: Mobile App for parents</p>
+              <div className="flex gap-3">
+                <div className="dot w-4 h-4 bg-[#FF46CE] rounded-full"></div>
                 <Image
                   src="/arrow.png"
                   alt="arrow"
@@ -64,14 +64,14 @@ export default function Home() {
                   height={20}
                   className="w-3 h-3 md:w-5 md:h-5 object-contain"
                 />
-              </Link>
-            </div>
+              </div>
+            </Link>
           </li>
-          <li className="flex justify-between items-center">
-            <p>3. Tasya: Digital Virtual Reality</p>
-            <div className="flex gap-3">
-              <div className="dot w-4 h-4 bg-[#698AFF] rounded-full"></div>
-              <Link href="/tasya">
+          <li>
+            <Link href="/tasya" className="flex justify-between items-center">
+              <p>Tasya: Digital Virtual Reality</p>
+              <div className="flex gap-3">
+                <div className="dot w-4 h-4 bg-[#698AFF] rounded-full"></div>
                 <Image
                   src="/arrow.png"
                   alt="arrow"
@@ -79,14 +79,14 @@ export default function Home() {
                   height={20}
                   className="w-3 h-3 md:w-5 md:h-5 object-contain"
                 />
-              </Link>
-            </div>
+              </div>
+            </Link>
           </li>
-          <li className="flex justify-between items-center">
-            <p>4. Some of my artwork</p>
-            <div className="flex gap-3">
-              <div className="dot w-4 h-4 bg-gradient-to-tr from-[#698AFF] from-40% via-white to-60% to-[#FF46CE] rounded-full"></div>
-              <Link href="/artwork">
+          <li>
+            <Link href="/artwork" className="flex justify-between items-center">
+              <p>Some of my artwork</p>
+              <div className="flex gap-3">
+                <div className="dot w-4 h-4 bg-gradient-to-tr from-[#698AFF] from-40% via-white to-60% to-[#FF46CE] rounded-full"></div>
                 <Image
                   src="/arrow.png"
                   alt="arrow"
@@ -94,8 +94,8 @@ export default function Home() {
                   height={20}
                   className="w-3 h-3 md:w-5 md:h-5 object-contain"
                 />
-              </Link>
-            </div>
+              </div>
+            </Link>
           </li>
         </ol>
       </div>
