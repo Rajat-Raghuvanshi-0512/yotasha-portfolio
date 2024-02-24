@@ -5,7 +5,7 @@ const About = () => {
   return (
     <section className="h-screen flex items-center pr-10 md:pr-14 lg:pr-20 xl:pr-24 2xl:pr-40 gap-5 md:gap-10 lg:gap-14 xl:gap-20 2xl:gap-24">
       <div className="flex-[0.8]">
-        <Image src="/me.png" alt="me" height={500} width={500} />
+        <Image src="/me.webp" alt="me" height={500} width={500} />
       </div>
       <div className="flex-[1.2]">
         <h3 className="text-orange-base font-bold text-3xl md:text-4xl lg:text-5xl">

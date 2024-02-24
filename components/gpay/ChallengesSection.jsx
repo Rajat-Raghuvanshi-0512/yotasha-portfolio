@@ -7,7 +7,7 @@ const ChallengesSection = ({ titleStyle = "", subHeadingStyles = "" }) => {
       <div className="flex gap-10">
         <div className="flex-1">
           <Image
-            src="/projects/gpay2.png"
+            src="/projects/gpay2.webp"
             alt="gpay1"
             width={450}
             height={450}

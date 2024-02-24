@@ -9,7 +9,7 @@ const page = () => {
         <span className="text-orange-base text-3xl">(Coming Soon)</span>
       </h2>
       <Image
-        src="/projects/tasya-banner.png"
+        src="/projects/tasya-banner.webp"
         alt="banner"
         width={1000}
         height={1000}

@@ -18,7 +18,7 @@ const Footer = () => {
       <div>
         <div className="flex gap-3 items-center text-lg md:text-3xl lg:text-4xl font-semibold">
           <Image
-            src="/logo.png"
+            src="/logo.webp"
             alt="panda"
             width={30}
             height={30}
@@ -33,7 +33,7 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row font-normal gap-3 md:gap-10 !text-sm md:text-md mt-2 lg:mt-5">
             <div className="flex items-center gap-2">
               <Image
-                src="/mail.png"
+                src="/mail.webp"
                 alt="panda"
                 width={20}
                 height={20}
@@ -43,7 +43,7 @@ const Footer = () => {
             </div>
             <div className="flex items-center gap-2">
               <Image
-                src="/phone.png"
+                src="/phone.webp"
                 alt="panda"
                 width={20}
                 height={20}
@@ -53,7 +53,7 @@ const Footer = () => {
             </div>
             <div className="items-center gap-2 hidden md:flex">
               <Image
-                src="/location.png"
+                src="/location.webp"
                 alt="panda"
                 width={15}
                 height={15}
@@ -65,7 +65,7 @@ const Footer = () => {
         </div>
       </div>
       <Image
-        src="/footer.png"
+        src="/footer.webp"
         alt="panda"
         width={300}
         height={300}

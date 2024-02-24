@@ -32,7 +32,7 @@ const GpayBanner = ({ titleStyle }) => {
       </div>
       <div className="flex-1 flex justify-end">
         <Image
-          src="/projects/gpay1.png"
+          src="/projects/gpay1.webp"
           alt="gpay1"
           width={450}
           height={450}

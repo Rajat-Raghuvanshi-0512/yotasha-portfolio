@@ -8,7 +8,7 @@ const ArtWork = () => {
         SOME ILLUSTRATIONS
       </h2>
       <Image
-        src="/projects/illustrations.png"
+        src="/projects/illustrations.webp"
         alt="banner"
         width={1000}
         height={1000}

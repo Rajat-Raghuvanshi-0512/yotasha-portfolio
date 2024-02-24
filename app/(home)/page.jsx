@@ -11,7 +11,7 @@ export default function Home() {
       </p>
       <div className="flex justify-center items-center mt-5">
         <Image
-          src="/banner.png"
+          src="/banner.webp"
           alt="banner"
           width={700}
           height={700}
@@ -43,7 +43,7 @@ export default function Home() {
               <div className="flex gap-3">
                 <div className="dot w-4 h-4 bg-[#698AFF] rounded-full"></div>
                 <Image
-                  src="/arrow.png"
+                  src="/arrow.webp"
                   alt="arrow"
                   width={20}
                   height={20}
@@ -58,7 +58,7 @@ export default function Home() {
               <div className="flex gap-3">
                 <div className="dot w-4 h-4 bg-[#FF46CE] rounded-full"></div>
                 <Image
-                  src="/arrow.png"
+                  src="/arrow.webp"
                   alt="arrow"
                   width={20}
                   height={20}
@@ -73,7 +73,7 @@ export default function Home() {
               <div className="flex gap-3">
                 <div className="dot w-4 h-4 bg-[#698AFF] rounded-full"></div>
                 <Image
-                  src="/arrow.png"
+                  src="/arrow.webp"
                   alt="arrow"
                   width={20}
                   height={20}
@@ -88,7 +88,7 @@ export default function Home() {
               <div className="flex gap-3">
                 <div className="dot w-4 h-4 bg-gradient-to-tr from-[#698AFF] from-40% via-white to-60% to-[#FF46CE] rounded-full"></div>
                 <Image
-                  src="/arrow.png"
+                  src="/arrow.webp"
                   alt="arrow"
                   width={20}
                   height={20}

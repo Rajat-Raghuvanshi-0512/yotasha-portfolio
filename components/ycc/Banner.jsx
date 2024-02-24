@@ -28,7 +28,7 @@ const YccBanner = () => {
         </div>
         <div className="flex-1">
           <Image
-            src="/projects/ycc-banner.png"
+            src="/projects/ycc-banner.webp"
             alt="banner"
             width={500}
             height={500}

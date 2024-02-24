@@ -44,7 +44,7 @@ const page = () => {
         <div className="col-span-2 bg-[#FFCAC4] text-orange-dark py-8 px-10 xl:px-16 xl:py-14 2xl:py-20 2xl:px-24">
           <div className="flex gap-3 items-center text-lg md:text-3xl lg:text-4xl font-semibold">
             <Image
-              src="/logo.png"
+              src="/logo.webp"
               alt="panda"
               width={30}
               height={30}
@@ -56,26 +56,31 @@ const page = () => {
             <p className="md:text-xl">Reach Out:</p>
             <div className="flex flex-col font-normal gap-3 md:gap-5 !text-sm md:text-md mt-2 lg:mt-5">
               <div className="flex items-center gap-2">
-                <Image src="/mail.png" alt="panda" width={15} height={15} />
+                <Image src="/mail.webp" alt="panda" width={15} height={15} />
                 <p>artwtasha@gmail.com</p>
               </div>
               <div className="flex items-center gap-2">
-                <Image src="/phone.png" alt="panda" width={15} height={15} />
+                <Image src="/phone.webp" alt="panda" width={15} height={15} />
                 <p>+91 81682 12340</p>
               </div>
               <div className="items-center gap-2 hidden md:flex">
-                <Image src="/location.png" alt="panda" width={10} height={10} />
+                <Image
+                  src="/location.webp"
+                  alt="panda"
+                  width={10}
+                  height={10}
+                />
                 <p>Karnal, Haryana</p>
               </div>
               <Image
-                src="/footer.png"
+                src="/footer.webp"
                 alt="panda"
                 width={400}
                 height={400}
                 className="w-[150px] -bottom-7 peer right-14 z-10 absolute h-[150px] md:w-[300px] md:h-[300px] object-contain object-right"
               />
               <Image
-                src="/hi.png"
+                src="/hi.webp"
                 alt="hi"
                 width={80}
                 height={80}

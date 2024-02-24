@@ -21,14 +21,14 @@ const IdeationSection = ({ subHeadingStyles }) => {
       <h4 className="my-5 mt-10">PAPER WIREFRAMING:</h4>
       <div className="grid grid-cols-2 gap-5 xl:gap-8">
         <Image
-          src={"/projects/wireframe1.png"}
+          src={"/projects/wireframe1.webp"}
           alt="wireframe"
           width={200}
           height={200}
           className="w-full h-[400px] first object-contain bg-gray-200 drop-shadow-lg border-gray-300 border rounded-3xl duration-500"
         />
         <Image
-          src={"/projects/wireframe2.png"}
+          src={"/projects/wireframe2.webp"}
           alt="wireframe"
           width={200}
           height={200}

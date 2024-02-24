@@ -16,7 +16,7 @@ const Insights = () => {
         </div>
         <div>
           <Image
-            src="/projects/gpay3.png"
+            src="/projects/gpay3.webp"
             alt="gpay3"
             width={400}
             height={400}

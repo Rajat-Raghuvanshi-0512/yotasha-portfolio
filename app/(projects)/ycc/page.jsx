@@ -4,24 +4,24 @@ import Image from "next/image";
 import React from "react";
 
 const wireframes = [
-  "wf1.png",
-  "wf2.png",
-  "wf3.png",
-  "wf4.png",
-  "wf5.png",
-  "wf6.png",
+  "wf1.webp",
+  "wf2.webp",
+  "wf3.webp",
+  "wf4.webp",
+  "wf5.webp",
+  "wf6.webp",
 ];
 
 const mockups = [
-  "m1.png",
-  "m2.png",
-  "m3.png",
-  "m4.png",
-  "m5.png",
-  "m6.png",
-  "m7.png",
-  "m8.png",
-  "m9.png",
+  "m1.webp",
+  "m2.webp",
+  "m3.webp",
+  "m4.webp",
+  "m5.webp",
+  "m6.webp",
+  "m7.webp",
+  "m8.webp",
+  "m9.webp",
 ];
 
 const YccPage = () => {
