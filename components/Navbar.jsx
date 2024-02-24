@@ -6,7 +6,6 @@ import React from "react";
 
 const Navbar = () => {
   const pathname = usePathname();
-  console.log(pathname);
   return (
     <nav className="border-b-orange-base border border-opacity-40 py-2 px-5 md:py-4  md:px-14 justify-between flex fixed w-full left-0 top-0 bg-white shadow-lg shadow-orange-base/10 z-10">
       <Link href="/">
