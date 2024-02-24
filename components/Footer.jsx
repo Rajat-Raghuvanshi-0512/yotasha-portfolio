@@ -5,13 +5,15 @@ import React from "react";
 
 const Footer = () => {
   const pathname = usePathname();
+  let bgColor = "bg-[#FFCAC4] text-orange-dark";
+  if (pathname === "/gpay") {
+    bgColor = "bg-[#D1DBFF] text-[#4767D6]";
+  } else if (pathname === "/ycc") {
+    bgColor = "bg-[#F5D08A] text-orange-dark";
+  }
   return (
     <footer
-      className={`${
-        pathname === "/gpay"
-          ? "bg-[#D1DBFF] text-[#4767D6]"
-          : "bg-[#FFCAC4] text-orange-dark"
-      }  p-5 md:px-20 flex justify-between items-center`}
+      className={`${bgColor} p-5 md:px-20 flex justify-between items-center`}
     >
       <div>
         <div className="flex gap-3 items-center text-lg md:text-3xl lg:text-4xl font-semibold">

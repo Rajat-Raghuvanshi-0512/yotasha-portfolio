@@ -68,3 +68,25 @@ export const mockupData = [
     image: "mockup4.png",
   },
 ];
+
+export const testsData = [
+  {
+    problem:
+      " For parents who have more than one students enrolled, selection of the student beforehand, creates more steps and may be overall confusing ",
+    solution: "Select Student dropdown option at the dashboard",
+    image: "ycc-test-1.png",
+  },
+  {
+    problem:
+      "Having separate layouts for each subject may be very confusing to track and the user may miss out on information",
+    solution:
+      "Specifying the subject with individual notification and test report",
+    image: "ycc-test-2.png",
+  },
+  {
+    problem: "Yellow Buttons with white text are not very readable",
+    solution:
+      "Changing the button to better meet the WCAG Accessibility Guidelines",
+    image: "ycc-test-3.png",
+  },
+];
