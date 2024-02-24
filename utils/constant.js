@@ -39,3 +39,32 @@ export const personas = [
     image: "p4.png",
   },
 ];
+
+export const mockupData = [
+  {
+    title: "1. SECURITY CONCERNS",
+    desc: "A major reason why seniors hesitate using online methods of payment is because they are concerned about getting their money deducted or sent to a wrong person simply because they made a wrong move while using the app.",
+    solution:
+      "Creating a family setting where members of a family can pre- approve merchants like nearby shops for groceries that the family uses often. This would help the seniors gain confidence while making smooth payments.",
+    image: "mockup1.png",
+  },
+  {
+    title: "2. SIMPLIFICATION OF PROCESS",
+    desc: "We could make the payment method simpler by reducing number of steps for an ease of use.",
+    solution:
+      "Voice Payment options for the approved merchants set in the family mode. A maximum limit can be set for voice payments for select merchants above which the transactions can be made like they normally are.",
+    image: "mockup2.png",
+  },
+  {
+    title: "3. LINGUISTIC BARRIERS",
+    desc: "Different language options become crucial in a country like India where there are about 22 official languages and countless local dialects. Not every user is necessarily an English-speaker. Although Google Pay does offer Hindi, Hinglish, Bengali, Gujarati, Kannada, Malayalam, Marathi, Tamil and Telugu options which are a lot but these do not cover all official Indian Languages.",
+    solution:
+      "For this particular project, I shall only use Hindi, Hinglish and Punjabi for my design models as these are the only Indian languages besides English that I know.",
+    image: "mockup3.png",
+  },
+  {
+    title: "4. INCREASED SIZE OF ELEMENTS",
+    desc: "A larger size of text and other UI elements is needed to cater to seniors as they may have issues with vision and may even struggle accidental tapping leading to confusing and bad user experiences. But since Google Pay already adjusts the size settings of the application according to the device’s font and size option, I kept it as is.",
+    image: "mockup4.png",
+  },
+];

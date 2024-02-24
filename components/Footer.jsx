@@ -1,33 +1,74 @@
+"use client";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 import React from "react";
 
 const Footer = () => {
+  const pathname = usePathname();
   return (
-    <footer className="bg-[#FFCAC4] text-orange-dark py-5 px-20 flex justify-between items-center">
+    <footer
+      className={`${
+        pathname === "/gpay"
+          ? "bg-[#D1DBFF] text-[#4767D6]"
+          : "bg-[#FFCAC4] text-orange-dark"
+      }  p-5 md:px-20 flex justify-between items-center`}
+    >
       <div>
-        <div className="flex gap-3 items-center text-3xl lg:text-4xl font-semibold">
-          <Image src="/logo.png" alt="panda" width={30} height={30} />
+        <div className="flex gap-3 items-center text-lg md:text-3xl lg:text-4xl font-semibold">
+          <Image
+            src="/logo.png"
+            alt="panda"
+            width={30}
+            height={30}
+            className={`${
+              pathname === "/gpay" ? "invert" : ""
+            } w-5 h-5 object-contain md:w-10 md:h-10`}
+          />
           <p>Yotashaw</p>
         </div>
-        <div className="mt-10 font-bold ml-10">
-          <p className="text-xl">Let&apos;s Connect:</p>
-          <div className="flex font-normal gap-10 text-md mt-2">
+        <div className="mt-3 md:mt-10 font-bold md:ml-10">
+          <p className="md:text-xl">Let&apos;s Connect:</p>
+          <div className="flex flex-col md:flex-row font-normal gap-3 md:gap-10 !text-sm md:text-md mt-2 lg:mt-5">
             <div className="flex items-center gap-2">
-              <Image src="/mail.png" alt="panda" width={20} height={20} />
+              <Image
+                src="/mail.png"
+                alt="panda"
+                width={20}
+                height={20}
+                className={pathname === "/gpay" ? "invert" : ""}
+              />
               <p>artwtasha@gmail.com</p>
             </div>
             <div className="flex items-center gap-2">
-              <Image src="/phone.png" alt="panda" width={20} height={20} />
+              <Image
+                src="/phone.png"
+                alt="panda"
+                width={20}
+                height={20}
+                className={pathname === "/gpay" ? "invert" : ""}
+              />
               <p>+91 81682 12340</p>
             </div>
-            <div className="flex items-center gap-2">
-              <Image src="/location.png" alt="panda" width={15} height={15} />
+            <div className="items-center gap-2 hidden md:flex">
+              <Image
+                src="/location.png"
+                alt="panda"
+                width={15}
+                height={15}
+                className={pathname === "/gpay" ? "invert" : ""}
+              />
               <p>Karnal, Haryana</p>
             </div>
           </div>
         </div>
       </div>
-      <Image src="/footer.png" alt="panda" width={300} height={300} />
+      <Image
+        src="/footer.png"
+        alt="panda"
+        width={300}
+        height={300}
+        className="w-[150px] h-[150px] md:w-[300px] md:h-[300px] object-contain object-right"
+      />
     </footer>
   );
 };
