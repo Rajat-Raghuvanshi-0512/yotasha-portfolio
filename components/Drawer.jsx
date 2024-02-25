@@ -19,7 +19,13 @@ export default function Drawer({ children, isOpen, setIsOpen }) {
       >
         <article className="relative w-full pb-10 flex flex-col space-y-6 overflow-y-scroll h-full">
           <header className="p-4 font-bold text-3xl text-orange-dark flex gap-5">
-            <Image src="/logo.webp" alt="logo" width={20} height={20} />
+            <Image
+              src="/logo.webp"
+              alt="logo"
+              width={25}
+              height={25}
+              className="object-contain"
+            />
             <p>Yotashaw</p>
           </header>
           {children}
