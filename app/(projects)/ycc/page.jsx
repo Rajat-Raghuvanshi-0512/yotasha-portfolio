@@ -26,13 +26,13 @@ const mockups = [
 
 const YccPage = () => {
   return (
-    <section className="m-5 md:m-10 mt-20 md:mt-24 xl:mx-20 2xl:mx-40 lg:mt-32 xl:mt-40 px-10 lg:px-20 2xl:text-xl">
+    <section className=" md:m-10 mt-20 md:mt-24 xl:mx-20 2xl:mx-40 lg:mt-32 xl:mt-40 px-5 md:px-10 lg:px-20 2xl:text-xl">
       <YccBanner />
       <div>
         <h3 className="text-2xl md:text-3xl lg:text-4xl text-center text-orange-dark font-semibold mt-10 md:mt-20 lg:mt-24">
           WIREFRAMES PROVIDED TO ME
         </h3>
-        <div className="grid grid-cols-6 gap-5 my-10 flex-wrap justify-center">
+        <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-5 my-10 flex-wrap justify-center">
           {wireframes.map((wf) => (
             <Image
               key={wf}
@@ -49,7 +49,7 @@ const YccPage = () => {
         <h3 className="text-2xl md:text-3xl lg:text-4xl text-center text-orange-dark font-semibold">
           INITIAL MOCKUPS
         </h3>
-        <div className="grid grid-cols-5 gap-5 my-10 flex-wrap justify-center">
+        <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-5 my-10 flex-wrap justify-center">
           {mockups.map((mockup) => (
             <Image
               key={mockup}

@@ -4,7 +4,7 @@ import React from "react";
 const Insights = () => {
   return (
     <>
-      <div className="flex justify-between items-center mt-10 xl:mt-20">
+      <div className="flex flex-col-reverse md:flex-row justify-between items-center mt-10 xl:mt-20">
         <div>
           <h3 className="text-xl font-bold">KEY INSIGHTS</h3>
           <ul className="list-disc ml-5 xl:ml-10 mt-4">

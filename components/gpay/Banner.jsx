@@ -3,9 +3,9 @@ import React from "react";
 
 const GpayBanner = ({ titleStyle }) => {
   return (
-    <div className="flex gap-5">
-      <div className="flex-1 mr-14">
-        <h1 className="text-[#4767D6] text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-semibold !leading-normal -mr-32">
+    <div className="flex gap-5 flex-col-reverse md:flex-row">
+      <div className="flex-1 md:mr-14">
+        <h1 className="text-[#4767D6] text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-semibold !leading-normal md:-mr-32">
           GOOGLE PAY FOR SENIORS
         </h1>
         <div>

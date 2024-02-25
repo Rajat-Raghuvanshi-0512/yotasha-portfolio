@@ -13,7 +13,7 @@ const Footer = () => {
   }
   return (
     <footer
-      className={`${bgColor} p-5 md:px-20 flex justify-between items-center`}
+      className={`${bgColor} p-5 md:px-20 flex justify-between items-center mt-5`}
     >
       <div>
         <div className="flex gap-3 items-center text-lg md:text-3xl lg:text-4xl font-semibold">

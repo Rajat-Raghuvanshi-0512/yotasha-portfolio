@@ -3,12 +3,12 @@ import React from "react";
 
 const IdeationSection = ({ subHeadingStyles }) => {
   const designCardStyle =
-    "bg-[#ddebf7] rounded-lg text-center h-40 flex items-center justify-center text-2xl capitalize p-5 drop-shadow border-blue-200 border";
+    "bg-[#ddebf7] rounded-lg text-center h-40 flex items-center justify-center md:text-2xl capitalize p-2 md:p-5 drop-shadow border-blue-200 border";
   return (
     <div className="mt-10 xl:mt-20">
       <h3 className={subHeadingStyles}> IDEATION & DESIGN</h3>
       <h4 className="my-5">HOW MIGHT WE:</h4>
-      <div className="grid grid-cols-3 gap-5 xl:gap-8">
+      <div className="grid grid-cols-2 lg:grid-cols-3 gap-5 xl:gap-8">
         <div className={designCardStyle}>Family member assistance</div>
         <div className={designCardStyle}>Voice activation</div>
         <div className={designCardStyle}>Pre-selecting merchants</div>
@@ -19,7 +19,7 @@ const IdeationSection = ({ subHeadingStyles }) => {
         </div>
       </div>
       <h4 className="my-5 mt-10">PAPER WIREFRAMING:</h4>
-      <div className="grid grid-cols-2 gap-5 xl:gap-8">
+      <div className="grid md:grid-cols-2 gap-5 xl:gap-8">
         <Image
           src={"/projects/wireframe1.webp"}
           alt="wireframe"

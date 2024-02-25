@@ -5,7 +5,7 @@ const FinalDesigns = ({ subHeadingStyles }) => {
     <>
       <div className="mt-10 xl:mt-20">
         <h3 className={subHeadingStyles}>FINAL DESIGNS</h3>
-        <div className="grid grid-cols-3 gap-5 md:gap-10 lg:gap-14 mt-5 lg:mt-8 xl:mt-10">
+        <div className="grid md:grid-cols-3 gap-5 md:gap-10 lg:gap-14 mt-5 lg:mt-8 xl:mt-10">
           <div className="bg-gray-200 font-bold text-xl rounded-lg border border-gray-300 drop-shadow-lg flex items-center justify-center h-[400px] md:h-[500px] lg:h-[600px] w-full animate-pulse">
             Coming soon...
           </div>

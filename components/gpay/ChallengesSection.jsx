@@ -4,7 +4,7 @@ import React from "react";
 const ChallengesSection = ({ titleStyle = "", subHeadingStyles = "" }) => {
   return (
     <div className="mt-10 xl:mt-20">
-      <div className="flex gap-10">
+      <div className="flex gap-10 flex-col md:flex-row">
         <div className="flex-1">
           <Image
             src="/projects/gpay2.webp"

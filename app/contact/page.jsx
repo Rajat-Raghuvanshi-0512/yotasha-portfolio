@@ -1,19 +1,19 @@
 import Image from "next/image";
 import React from "react";
 
-const page = () => {
+const ContactPage = () => {
   return (
-    <section className="m-5 md:m-10 mt-20 md:mt-24 xl:mx-20 2xl:mx-40 lg:mt-32 2xl:mt-40 px-10 lg:px-20 2xl:text-xl lg:pb-10">
+    <section className="md:m-10 mt-20 md:mt-24 xl:mx-20 2xl:mx-40 lg:mt-32 2xl:mt-40 px-5 md:px-10 lg:px-20 2xl:text-xl lg:pb-10">
       <h2 className="text-orange-base text-3xl md:text-4xl lg:text-5xl 2xl:text-6xl font-bold">
         GET IN TOUCH
       </h2>
-      <div className="border-[#FFCAC4] border grid grid-cols-5 mt-10 min-h-[60vh] relative">
-        <div className="col-span-3 py-8 px-10 2xl:py-20 2xl:px-24">
+      <div className="border-[#FFCAC4] border grid grid-cols-1 md:grid-cols-5 mt-10 min-h-[60vh] relative">
+        <div className="md:col-span-3 p-5 md:py-8 md:px-10 2xl:py-20 2xl:px-24">
           <h3 className="text-3xl font-semibold text-orange-base drop-shadow">
             Contact Me
           </h3>
           <div className="flex flex-col gap-5">
-            <div className="flex gap-5 mt-10">
+            <div className="flex flex-col md:flex-row gap-5 mt-10">
               <input
                 className="p-3 2xl:p-4 flex-1 rounded border border-[#707070] outline-[#ffcac4]"
                 placeholder="Name"
@@ -41,7 +41,7 @@ const page = () => {
             </button>
           </div>
         </div>
-        <div className="col-span-2 bg-[#FFCAC4] text-orange-dark py-8 px-10 xl:px-16 xl:py-14 2xl:py-20 2xl:px-24">
+        <div className="md:col-span-2 bg-[#FFCAC4] text-orange-dark py-8 px-10 xl:px-16 xl:py-14 2xl:py-20 2xl:px-24 hidden md:block">
           <div className="flex gap-3 items-center text-lg md:text-3xl lg:text-4xl font-semibold">
             <Image
               src="/logo.webp"
@@ -94,4 +94,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default ContactPage;

@@ -3,12 +3,12 @@ import React from "react";
 
 const About = () => {
   return (
-    <section className="h-screen flex items-center pr-10 md:pr-14 lg:pr-20 xl:pr-24 2xl:pr-40 gap-5 md:gap-10 lg:gap-14 xl:gap-20 2xl:gap-24">
+    <section className="min-h-screen flex flex-col md:flex-row items-center p-5 pr-10 md:pr-14 lg:pr-20 xl:pr-24 2xl:pr-40 gap-5 md:gap-10 lg:gap-14 xl:gap-20 2xl:gap-24 mt-20 md:mt-0">
       <div className="flex-[0.8]">
         <Image src="/me.webp" alt="me" height={500} width={500} />
       </div>
       <div className="flex-[1.2]">
-        <h3 className="text-orange-base font-bold text-3xl md:text-4xl lg:text-5xl">
+        <h3 className="text-orange-base text-center md:text-left font-bold text-3xl md:text-4xl lg:text-5xl">
           About me
         </h3>
         <p className="my-5 lg:my-8">

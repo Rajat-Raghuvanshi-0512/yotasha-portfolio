@@ -5,7 +5,9 @@ import React from "react";
 const MockupCard = ({ title, desc, solution, image, idx }) => {
   return (
     <div
-      className={`flex gap-5 xl:gap-10 ${idx % 2 !== 0 && "flex-row-reverse"}`}
+      className={`flex flex-col gap-5 xl:gap-10 ${
+        idx % 2 !== 0 ? "md:flex-row-reverse" : "md:flex-row"
+      }`}
     >
       <div className="flex-[1.1]">
         <h4 className="text-[#4767D6] text-2xl font-semibold mt-5">{title}</h4>

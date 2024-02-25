@@ -4,7 +4,7 @@ import React from "react";
 const YccBanner = () => {
   return (
     <section>
-      <div className="flex">
+      <div className="flex flex-col-reverse md:flex-row">
         <div className="flex-1">
           <h1 className="text-orange-base text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-semibold !leading-normal">
             YCC : MOBILE APP FOR PARENTS
