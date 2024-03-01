@@ -10,10 +10,12 @@ const Footer = () => {
     bgColor = "bg-[#D1DBFF] text-[#4767D6]";
   } else if (pathname === "/ycc") {
     bgColor = "bg-[#F5D08A] text-orange-dark";
+  } else if (pathname === "/tasya") {
+    bgColor = "bg-[#313749] text-white/80";
   }
   return (
     <footer
-      className={`${bgColor} p-5 md:px-20 flex justify-between items-center mt-5`}
+      className={`${bgColor} p-5 md:px-20 flex justify-between items-center pt-5`}
     >
       <div>
         <div className="flex gap-3 items-center text-lg md:text-3xl lg:text-4xl font-semibold">
@@ -23,7 +25,11 @@ const Footer = () => {
             width={30}
             height={30}
             className={`${
-              pathname === "/gpay" ? "invert" : ""
+              pathname === "/gpay"
+                ? "invert"
+                : pathname === "/tasya"
+                ? "grayscale"
+                : ""
             } w-5 h-5 object-contain md:w-10 md:h-10`}
           />
           <p>Yotashaw</p>
@@ -37,7 +43,13 @@ const Footer = () => {
                 alt="panda"
                 width={20}
                 height={20}
-                className={pathname === "/gpay" ? "invert" : ""}
+                className={
+                  pathname === "/gpay"
+                    ? "invert"
+                    : pathname === "/tasya"
+                    ? "grayscale"
+                    : ""
+                }
               />
               <p>artwtasha@gmail.com</p>
             </div>
@@ -47,7 +59,13 @@ const Footer = () => {
                 alt="panda"
                 width={20}
                 height={20}
-                className={pathname === "/gpay" ? "invert" : ""}
+                className={
+                  pathname === "/gpay"
+                    ? "invert"
+                    : pathname === "/tasya"
+                    ? "grayscale"
+                    : ""
+                }
               />
               <p>+91 81682 12340</p>
             </div>
@@ -57,7 +75,13 @@ const Footer = () => {
                 alt="panda"
                 width={15}
                 height={15}
-                className={pathname === "/gpay" ? "invert" : ""}
+                className={
+                  pathname === "/gpay"
+                    ? "invert"
+                    : pathname === "/tasya"
+                    ? "grayscale"
+                    : ""
+                }
               />
               <p>Karnal, Haryana</p>
             </div>

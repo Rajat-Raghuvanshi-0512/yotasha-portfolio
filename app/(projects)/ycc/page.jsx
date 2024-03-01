@@ -1,3 +1,4 @@
+import Carousel from "@/components/Carousel";
 import YccBanner from "@/components/ycc/Banner";
 import Tests from "@/components/ycc/Tests";
 import Image from "next/image";
@@ -13,15 +14,15 @@ const wireframes = [
 ];
 
 const mockups = [
-  "m1.webp",
-  "m2.webp",
-  "m3.webp",
-  "m4.webp",
-  "m5.webp",
-  "m6.webp",
-  "m7.webp",
-  "m8.webp",
-  "m9.webp",
+  "/projects/mockups/m1.webp",
+  "/projects/mockups/m2.webp",
+  "/projects/mockups/m3.webp",
+  "/projects/mockups/m4.webp",
+  "/projects/mockups/m5.webp",
+  "/projects/mockups/m6.webp",
+  "/projects/mockups/m7.webp",
+  "/projects/mockups/m8.webp",
+  "/projects/mockups/m9.webp",
 ];
 
 const YccPage = () => {
@@ -49,11 +50,11 @@ const YccPage = () => {
         <h3 className="text-2xl md:text-3xl lg:text-4xl text-center text-orange-dark font-semibold">
           INITIAL MOCKUPS
         </h3>
-        <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-5 my-10 flex-wrap justify-center">
+        <div className="md:grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-5 my-10 flex-wrap justify-center hidden ">
           {mockups.map((mockup) => (
             <Image
               key={mockup}
-              src={`/projects/mockups/${mockup}`}
+              src={mockup}
               alt="wf"
               width={300}
               height={300}
@@ -61,6 +62,7 @@ const YccPage = () => {
             />
           ))}
         </div>
+        <Carousel className="md:hidden" images={mockups} />
       </div>
       <Tests />
       <h3 className="text-orange-dark font-semibold text-2xl lg:text-3xl my-5 md:my-10">
